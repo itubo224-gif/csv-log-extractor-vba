@@ -40,6 +40,8 @@ Time,SigA,SigB,SigC
 0.02,3,-3,0.7
 ```
 
+また、本ツールは、VBAとPythonを用いた検証基盤により、複数のテストケースで動作確認を行っています。
+
 ---
 
 # Features
@@ -156,8 +158,19 @@ csv-log-extractor-vba
 │   sample_log1.csv
 │   sample_log2.csv
 │
+├ validation
+│   ├ python
+│   │   generate_expected.py
+│   ├ test_data
+│   │   test1.csv
+│   │   test2.csv
+│   ├ vba_test_book.xlsm
+│   └ README.md
+│
 └ README.md
 ```
+
+validation フォルダには、VBAツールの動作を検証するためのテストケース・期待値生成（Python）・比較環境が含まれています。詳細はそちらのREADME.mdをご参照ください。
 
 ---
 
